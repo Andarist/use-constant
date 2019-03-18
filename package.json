@@ -1,0 +1,48 @@
+{
+  "name": "use-constant",
+  "version": "0.0.0",
+  "description": "React hook for creating a value exactly once.",
+  "main": "./dist/use-constant.cjs.js",
+  "module": "./dist/use-constant.esm.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" || jest --env=node",
+    "prebuild": "rimraf dist types",
+    "build": "rollup -c && tsc && node ./scripts/generate-flow-files",
+    "preversion": "npm test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/use-constant.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/use-constant/issues"
+  },
+  "homepage": "https://github.com/Andarist/use-constant#readme",
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.8",
+    "fs-extra": "^7.0.1",
+    "husky": "^1.3.1",
+    "jest": "^24.5.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
+    "react": "^16.8.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.6.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "typescript": "^3.3.3333"
+  }
+}
