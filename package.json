@@ -1,6 +1,6 @@
 {
   "name": "use-constant",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React hook for creating a value exactly once.",
   "main": "./dist/use-constant.cjs.js",
   "module": "./dist/use-constant.esm.js",
