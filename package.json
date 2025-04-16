@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "test": "echo \"Warning: no test specified\" || jest --env=node",
-    "build": "preconstruct build && node ./scripts/generate-flow-files",
+    "build": "preconstruct build",
     "preversion": "npm test",
     "prepare": "npm run build"
   },
